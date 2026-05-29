@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tekton Thriskevma Corp. – Website
 
-## Getting Started
+Premium construction company website built with Next.js, Tailwind CSS, Framer Motion, AI chatbot, and a client portal.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modern design** – oval cards, glassmorphism, green palette, smooth animations
+- **AI Assistant** – powered by Groq (Llama 3.1), answers client questions and captures leads
+- **Client Portal** – login/register, project dashboard, document access
+- **Admin Workspace** – lead management, contact form submissions
+- **Contact Form** – sends emails via Resend API
+- **Fully Responsive** – works on all devices
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS 3
+- Framer Motion
+- Groq API (AI chat)
+- Resend (email delivery)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Database Required
 
-## Learn More
+This project currently uses mock data. To make it fully functional, you need a PostgreSQL database.
 
-To learn more about Next.js, take a look at the following resources:
+### Setup Database (PostgreSQL)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a free PostgreSQL database on [Neon](https://neon.tech) or [Supabase](https://supabase.com).
+2. Add your database connection string to `.env.local`:
